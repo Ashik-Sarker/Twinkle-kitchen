@@ -10,15 +10,16 @@ import Blogs from './Pages/Home/Blogs/Blogs';
 import Login from './Pages/Login/Login/Login';
 import Registration from './Pages/Login/Registration/Registration';
 import NotFound from './Pages/NotFound/NotFound';
+import CheckOut from './Pages/Home/CheckOut/CheckOut';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <NavBar></NavBar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/services/:serviceId' element={<Services></Services>}></Route>
+        <Route path='/services/:serviceId' element={<CheckOut></CheckOut>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>

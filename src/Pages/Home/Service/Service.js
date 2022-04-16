@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Card, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Service.css'
 
 const Service = ({ service }) => {
@@ -13,7 +13,9 @@ const Service = ({ service }) => {
                 <p className="card-text">{descriptions}</p>
                 <h3>{price}</h3>
                 </div>
-                <button className='border-0 bg-dark text-light py-3 fs-4 fw-bold'>Get Service</button>
+                <Link to={`/services/${id}`}>
+                    <button className='w-100 border-0 bg-dark text-light py-3 fs-4 fw-bold'>Get Service</button>
+                </Link>
             </div>
         </div>
     );
