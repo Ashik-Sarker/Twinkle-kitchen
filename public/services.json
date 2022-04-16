@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name":"Responsive Design",
+        "price":"100$",
+        "image":"https://i.ibb.co/41ZhsYs/services1.png",
+        "descriptions":"Here I am creating your design responsive using css framework any of them and it must be responsive design for all devices."
+    },
+    {
+        "id": 2,
+        "name":"Develop Front End Site With React",
+        "price":"200$",
+        "image":"https://i.ibb.co/TR35H3w/services2.png",
+        "descriptions":"Here I am creating your design responsive for all devices using css framework and using most popular react library."
+    },
+    {
+        "id": 3,
+        "name":"Authentication With Firebase",
+        "price":"100$",
+        "image":"https://i.ibb.co/grr3gj1/services3.png",
+        "descriptions":"Here I am fixed and create authorization section using Firebase and other authentication library like react hook."
+    }
+]
