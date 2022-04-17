@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -24,11 +24,19 @@ const Login = () => {
         navigate(from, { replace: true });
     }
 
-    const handleLogin = event => {
+    // const [sendPasswordResetEmail, sending, Reseterror] = useSendPasswordResetEmail(auth);
+    // if (sending) {
+    // return <p>Loading...</p>;
+    // }
+
+    const handleLogin = async(event) => {
         event.preventDefault();
         const email = event.target.email.value;
         const password = event.target.password.value;
-        signInWithEmailAndPassword(email,password);
+        signInWithEmailAndPassword(email, password);
+        
+        // await sendPasswordResetEmail(email);
+        // alert('Sent email');
 
     }
     return (
@@ -50,8 +58,8 @@ const Login = () => {
                 
 
                 <p className='mt-3'>Are You new to my site? <span className=''><Link to={'/registration'}>Registration first</Link></span></p>
-                <SocialLogin></SocialLogin>
             </Form>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };

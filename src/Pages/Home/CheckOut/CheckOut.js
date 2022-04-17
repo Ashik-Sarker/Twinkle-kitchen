@@ -3,7 +3,7 @@ import { Button, Col, Form, Row } from 'react-bootstrap';
 
 const CheckOut = () => {
     return (
-        <div className='container'>
+        <div className='container shadow p-5 mt-5'>
             <h1 className='my-5 text-center'>Check Out</h1>
             <Form>
             <Row className="mb-3">

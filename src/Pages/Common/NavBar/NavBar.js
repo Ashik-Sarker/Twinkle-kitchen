@@ -16,12 +16,12 @@ const NavBar = () => {
     return (
         <Navbar sticky='top' className='py-2' collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-            <Navbar.Brand as={Link} to='/home'>Pro Developer</Navbar.Brand>
+            <Navbar.Brand as={Link} to='/'>Pro Developer</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                    <Nav.Link as={Link} to='#services'>Services</Nav.Link>
-                    <Nav.Link as={Link} to='#blogs'>Blogs</Nav.Link>
+                    <Nav.Link href='home#services'>Courses</Nav.Link>
+                    <Nav.Link href='home#blogs'>Blogs</Nav.Link>
                     <Nav.Link as={Link} to='about'>About</Nav.Link>
                 </Nav>
                     <Nav>
