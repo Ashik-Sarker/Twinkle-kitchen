@@ -1,27 +1,55 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
+
+    let createError;
+    if (error) {
+        createError = <p>Error: {error.message}</p>
+    }
+    const navigate = useNavigate();
+    if (user) {
+        navigate('/');
+    }
+
+    const handleLogin = event => {
+        event.preventDefault();
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+        signInWithEmailAndPassword(email,password);
+
+    }
     return (
         <div className='container my-5 py-5'>
             <h1>LogIn</h1>
-            <Form>
+            <Form onSubmit={handleLogin}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control className='py-3' type="email" placeholder="Enter email" />
+                    <Form.Control className='py-3' type="email" name='email' placeholder="Enter email" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control className='py-3' type="password" placeholder="Password" />
+                    <Form.Control className='py-3' type="password" name='password' placeholder="Password" />
                 </Form.Group>
-                <Button className='w-100 py-3 mt-4' variant="primary" type="submit">Submit</Button>
+
+                <p>{createError}</p> 
+                <Button className='w-100 py-3 mt-4' variant="primary" type="submit">Login</Button> 
+                
 
                 <p className='mt-3'>Are You new to my site? <span className=''><Link to={'/registration'}>Registration first</Link></span></p>
-
-                <Button className='w-100 py-3 mt-4' variant="primary" type="submit">Google Sign In</Button>
-                <Button className='w-100 py-3 mt-4' variant="primary" type="submit">GitHub Sign In</Button>
+                <SocialLogin></SocialLogin>
             </Form>
         </div>
     );
