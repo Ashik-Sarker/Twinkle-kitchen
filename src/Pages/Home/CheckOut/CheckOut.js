@@ -4,7 +4,7 @@ import { Button, Col, Form, Row } from 'react-bootstrap';
 const CheckOut = () => {
     return (
         <div className='container'>
-            <h1 className='my-5 text-primary'>Check Out</h1>
+            <h1 className='my-5 text-center'>Check Out</h1>
             <Form>
             <Row className="mb-3">
                 <Form.Group as={Col} controlId="formGridEmail">
@@ -52,7 +52,7 @@ const CheckOut = () => {
                 <Form.Check type="checkbox" label="Check me out" />
             </Form.Group>
 
-            <Button variant="primary" type="submit">
+            <Button className='w-100 py-2' variant="primary" type="submit">
                 Submit
             </Button>
             </Form>
