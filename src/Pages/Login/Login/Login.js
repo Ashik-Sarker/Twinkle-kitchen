@@ -29,9 +29,6 @@ const Login = () => {
     }
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
-    // if (sending) {
-    // return <p>Loading...</p>;
-    // }
 
     const resetPassword = async () => {
         const email = emailRef?.current?.value;

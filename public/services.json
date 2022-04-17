@@ -1,23 +1,45 @@
 [
     {
         "id": 1,
-        "name":"Responsive Design",
-        "price":"100$",
-        "image":"https://i.ibb.co/41ZhsYs/services1.png",
-        "descriptions":"Here I am creating your design responsive using css framework any of them and it must be responsive design for all devices."
+        "name":"Beef Curry",
+        "price":"250",
+        "image":"https://i.ibb.co/jhQZLYb/beef-js.jpg",
+        "descriptions":"Here I am making a delicious Beef Curry for You. Here I am using special masala and many more items whice makes it tasty."
     },
     {
         "id": 2,
-        "name":"Develop Front End Site With React",
-        "price":"200$",
-        "image":"https://i.ibb.co/TR35H3w/services2.png",
-        "descriptions":"Here I am creating your design responsive for all devices using css framework and using most popular react library."
+        "name":"Beef Biriyani",
+        "price":"220",
+        "image":"https://i.ibb.co/SVcBysD/beef-Biriyani.jpg",
+        "descriptions":"Here I am making a delicious Beef Biriyani for You. Here I am using special masala and many more items whice makes it tasty."
     },
     {
         "id": 3,
-        "name":"Authentication With Firebase",
-        "price":"100$",
-        "image":"https://i.ibb.co/grr3gj1/services3.png",
-        "descriptions":"Here I am fixed and create authorization section using Firebase and other authentication library like react hook."
+        "name":"Chicken Biriyani",
+        "price":"180",
+        "image":"https://i.ibb.co/zJXYrdK/chicken-Biriyani.jpg",
+        "descriptions":"Here I am making a delicious Chicken Biriyani for You. Here I am using special masala and many more items whice makes it tasty."
+    },
+    {
+        "id": 4,
+        "name":"Fish Curry With special Sauce",
+        "price":"250",
+        "image":"https://i.ibb.co/v33DWQF/fish-Curry.jpg",
+        "descriptions":"Here I am making a delicious Fish Curry for You. Here I am using special masala and many more items whice makes it tasty."
+    },
+    {
+        "id": 5,
+        "name":"Popular juices",
+        "price":"70",
+        "image":"https://i.ibb.co/pLhRQZ2/mango-Juice.jpg",
+        "descriptions":"Here I am making a delicious Juices for You. Here I am using special masala and many more items whice makes it tasty."
+    },
+    {
+        "id": 6,
+        "name":"Pizza",
+        "price":"700",
+        "image":"https://i.ibb.co/pQ9PXS1/pizza.jpg",
+        "descriptions":"Here I am making a delicious Pizza for You. Here I am using special masala and many more items whice makes it tasty."
     }
 ]
+
