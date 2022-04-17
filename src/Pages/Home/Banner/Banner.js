@@ -18,8 +18,8 @@ const Banner = () => {
                 alt="First slide"
                 />
                 <Carousel.Caption>
-                <h3>Beef Curry</h3>
-                <p>Her I am cooking for you delicious Beef Curry for more details visit Food Items.</p>
+                <h3 style={{fontSize:"100px"}}>Beef Curry</h3>
+                <p style={{fontSize:"30px"}}>Here I am cooking for you delicious Beef Curry for more details visit Food Items.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -30,8 +30,8 @@ const Banner = () => {
                 alt="First slide"
                 />
                 <Carousel.Caption>
-                <h3>Beef Biriyani</h3>
-                <p>Her I am cooking for you delicious Beef Biriyani for more details visit Food Items.</p>
+                <h3 style={{fontSize:"100px"}}>Beef Biriyani</h3>
+                <p style={{fontSize:"30px"}}>Here I am cooking for you delicious Beef Biriyani for more details visit Food Items.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -43,8 +43,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                <h3>Chicken Biriyani</h3>
-                <p>Her I am cooking for you delicious Chicken Biriyani for more details visit Food Items.</p>
+                <h3 style={{fontSize:"100px"}}>Chicken Biriyani</h3>
+                <p style={{fontSize:"30px"}}>Here I am cooking for you delicious Chicken Biriyani for more details visit Food Items.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -55,8 +55,8 @@ const Banner = () => {
                 alt="First slide"
                 />
                 <Carousel.Caption>
-                <h3>Fish Curry</h3>
-                <p>Her I am cooking for you delicious Fish Curry for more details visit Food Items.</p>
+                <h3 style={{fontSize:"100px"}}>Fish Curry</h3>
+                <p style={{fontSize:"30px"}}>Here I am cooking for you delicious Fish Curry for more details visit Food Items.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -67,8 +67,8 @@ const Banner = () => {
                 alt="First slide"
                 />
                 <Carousel.Caption>
-                <h3>Mango Juice</h3>
-                <p>Her I am making for you wonderful Juices for more details visit Food Items.</p>
+                <h3 style={{fontSize:"100px"}}>Mango Juice</h3>
+                <p style={{fontSize:"30px"}}>Here I am making for you wonderful Juices for more details visit Food Items.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -80,8 +80,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                <h3>Pizza</h3>
-                <p>Her I am making for you delicious Pizza for more details visit Food Items.</p>
+                <h3 style={{fontSize:"100px"}}>Pizza</h3>
+                <p style={{fontSize:"30px"}}>Here I am making for you delicious Pizza for more details visit Food Items.</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
