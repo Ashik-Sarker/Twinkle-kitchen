@@ -66,7 +66,7 @@ const Login = () => {
 
                 <p>{createError}</p>
                 <p>{load}</p>
-                <Button className='w-100 py-3 mt-4' variant="primary" type="submit">Login</Button> 
+                <Button onClick={() => toast(`${error ? error.message : 'you are log in'}`)} className='w-100 py-3 mt-4' variant="primary" type="submit">Login</Button> 
                 
 
                 <p className='mt-3'>Are You new to my site? <span className=''><Link to={'/registration'}>Registration first</Link></span></p>

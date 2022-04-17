@@ -1,7 +1,11 @@
 import React from 'react';
 import { Button, Col, Form, Row } from 'react-bootstrap';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const CheckOut = () => {
+
+    
     return (
         <div className='container shadow p-5 mt-5'>
             <h1 className='my-5 text-center'>Check Out</h1>
@@ -52,10 +56,11 @@ const CheckOut = () => {
                 <Form.Check type="checkbox" label="Check me out" />
             </Form.Group>
 
-            <Button className='w-100 py-2' variant="primary" type="submit">
+            <Button onClick={() => toast('your information is send')} className='w-100 py-2' variant="primary" type="submit">
                 Submit
             </Button>
             </Form>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

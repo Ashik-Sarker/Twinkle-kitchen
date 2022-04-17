@@ -4,7 +4,7 @@ const Blogs = () => {
     return (
         <div id='blogs' className='container'>
             <h1 className='fs-3 text-center my-5'>My Popular Blogs</h1>
-            <div className="row row-cols-1 row-cols-md-3 g-4 mb-4">
+            <div className="row row-cols-1 g-4 mb-4">
                 <div className="col">
                     <div className="card h-100">
                     <div className="card-body p-4">
