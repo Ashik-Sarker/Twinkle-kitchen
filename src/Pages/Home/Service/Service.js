@@ -14,7 +14,7 @@ const Service = ({ service }) => {
                 <h3>{price}</h3>
                 </div>
                 <Link to={`/services/${id}`}>
-                    <button className='w-100 border-0 bg-dark text-light py-3 fs-4 fw-bold'>Get Service</button>
+                    <button className='w-100 border-0 bg-dark text-light py-3 '>Get Service</button>
                 </Link>
             </div>
         </div>
