@@ -33,7 +33,7 @@ const Registration = () => {
     }
 
     return (
-        <div className='shadow container my-5 p-5'>
+        <div className='w-50 mx-auto shadow container my-5 p-5'>
             <h1 className='text-center'>Registration</h1>
             <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicName">

@@ -32,9 +32,9 @@ const Login = () => {
 
     }
     return (
-        <div className='shadow container my-5 p-5'>
+        <div className='w-50 mx-auto shadow container my-5 p-5'>
             <h1 className='text-center'>LogIn</h1>
-            <Form onSubmit={handleLogin}>
+            <Form onSubmit={handleLogin} className="">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control className='py-3' type="email" name='email' placeholder="Enter email" />
