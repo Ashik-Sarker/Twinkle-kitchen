@@ -2,9 +2,9 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div id='blogs' className='my-5 bg-light px-5 py-5 shadow m-5 pt-5 text-center'>
-            <h1>My Blogs</h1>
-            <div className="row row-cols-1 row-cols-md-3 g-4 mb-5 mt-3">
+        <div id='blogs' className='bg-light shadow m-5 text-center'>
+            <h1 className='shadow bg-success text-light py-2'>My Blogs</h1>
+            <div className="row row-cols-1 row-cols-md-3 g-4 mb-5 mt-3 p-3">
                 <div className="col">
                     <div className="card h-100 shadow">
                     <div className="card-body p-5">

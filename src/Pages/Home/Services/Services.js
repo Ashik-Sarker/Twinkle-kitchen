@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import {Row } from 'react-bootstrap';
 import Service from '../Service/Service';
 
 const Services = () => {
@@ -12,9 +11,9 @@ const Services = () => {
     }, [])
     
     return (
-        <div id='services' className = 'my-5 pt-5 p-5 bg-light shadow m-5 text-center' >
-            <h1 className='fw-bolder shadow py-3'>Services</h1>
-            <div className="row row-cols-1 row-cols-md-3 g-5 mt-3">
+        <div id='services' className = 'my-5 bg-light shadow m-5 text-center' >
+            <h1 className='fw-bolder shadow py-2 bg-success text-light'>Services</h1>
+            <div className="row row-cols-1 row-cols-md-3 g-5 mt-1 p-3">
             {
                 services.map(service => < Service
                     key={service.id}

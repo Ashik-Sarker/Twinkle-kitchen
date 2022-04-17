@@ -11,9 +11,10 @@ const NavBar = () => {
 
      const logout = () => {
          signOut(auth);
-     };
+         navigate('/');
+    };
     return (
-        <Navbar sticky='top' className='py-4' collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar sticky='top' className='py-2' collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
             <Navbar.Brand as={Link} to='/home'>Pro Developer</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
