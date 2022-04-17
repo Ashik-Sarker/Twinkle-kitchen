@@ -1,12 +1,14 @@
-import React from 'react';
-import { Button, Form } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Button, Form, Spinner } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import Loading from '../../Common/Loading/Loading';
 
 const Registration = () => {
-
+    const navigate = useNavigate();
+    const [agree, setAgree] = useState(false);
     const [
         createUserWithEmailAndPassword,
         user,
@@ -16,11 +18,13 @@ const Registration = () => {
 
     let createError;
     if (error) {
-        createError = <p>Error: {error.message}</p>
+        createError = <p className='text-danger'>Error: {error.message}</p>
     }
-    const navigate = useNavigate();
+    if (loading) {
+        createError = <Spinner animation="grow" />
+    }
     if (user) {
-        navigate('/');
+        navigate('/home');
     }
 
     const handleRegister = event => {
@@ -28,7 +32,10 @@ const Registration = () => {
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
-        createUserWithEmailAndPassword(email, password);
+
+        if (agree) {
+            createUserWithEmailAndPassword(email, password);
+        }
 
     }
 
@@ -50,8 +57,16 @@ const Registration = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control className='py-3' type="password" name='password' placeholder="Password" required/>
                 </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                    <Form.Check onClick={() => setAgree(!agree)} className='text-primary' type="checkbox" label="accept terms and conditions" />
+                </Form.Group>
+
                 <p>{createError}</p>
-                <Button className='w-100 py-3 mt-4' variant="primary" type="submit">Submit</Button>
+                <Button
+                    disabled={!agree}
+                    className='w-100 py-3 mt-4' variant="primary" type="submit"
+                >Submit</Button>
 
                 <p className='mt-3'>Already have an account? <span className=''><Link to={'/login'}>Please Login</Link></span></p>
                 <SocialLogin></SocialLogin>

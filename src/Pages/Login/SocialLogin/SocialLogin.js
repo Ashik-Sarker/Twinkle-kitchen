@@ -3,16 +3,20 @@ import { Button, Form } from 'react-bootstrap';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../Common/Loading/Loading';
 
 const SocialLogin = () => {
+    const location = useLocation();
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const navigate = useNavigate();
 
+    if (loading) {
+        return <Loading></Loading>
+    }
     let getError;
     if (error) {
         getError = <p>Error: {error.message}</p>
     }
-    const location = useLocation();
     let from = location?.state?.from?.pathname || "/";
     if (user) {
         navigate(from, { replace: true });
@@ -28,9 +32,9 @@ const SocialLogin = () => {
                 <div className='border w-50' style={{height:"1px"}}></div>
             </div>
             <Form>
-                <Button onClick={() => signInWithGoogle()} className='w-100 py-3 mt-4' variant="primary">Google Sign In</Button>
+                <Button onClick={() => signInWithGoogle()} className='w-100 py-3 mt-4' variant="success">Google Sign In</Button>
 
-                <Button className='w-100 py-3 mt-4' variant="primary">GitHub Sign In</Button>
+                {/* <Button className='w-100 py-3 mt-4' variant="primary">GitHub Sign In</Button> */}
             </Form>
         </div>
     );
