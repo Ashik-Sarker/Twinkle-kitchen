@@ -1,13 +1,10 @@
 import React from 'react';
 import pro from '../../images/New folder/profilepic.png';
-import banner1 from '../../images/banner/b1.jpg'
-import banner2 from '../../images/banner/b2.jpg'
-import banner3 from '../../images/banner/b3.jpg'
 
 const About = () => {
     return (
-        <div className="container mt-5">
-            <div className="row row-cols-1 row-cols-md-2 shadow">
+        <div className="container mt-5 shadow px-4">
+            <div className="row row-cols-1 row-cols-md-2 ">
                 <div className="col">
                     <img className='w-75 rounded-circle mb-3 ms-5' src={pro} alt=""/>
                 </div>
@@ -19,35 +16,16 @@ const About = () => {
                     <button className='btn-danger fw-bold border-0 px-4 py-2 rounded'>Explore Now</button>
                 </div>
             </div>
-            <div className="row row-cols-1 row-cols-md-3 g-4 my-5 py-5">
+            <div className="row row-cols-1 mb-5 py-5"> 
                 <div className="col">
                     <div className="card h-100">
-                    <img src={banner1} className="card-img-top h-50" alt="..."/>
                     <div className="card-body">
-                        <h5 className="card-title text-center fs-3 bg-" style={{color:"orange", border: "1px solid", borderImage: "linear-gradient(#f7d516, #ec3a1b) 20"}}>Mission</h5>
-                        <p className="card-text">Entertain, inform and inspire people around the globe through the power of unparalleled storytelling, reflecting the iconic brands, creative minds and innovative technologies that make ours the world’s best software company.</p>
+                        <h5 className="py-2 card-title text-center fs-3" style={{color:"orange", borderBottom: "1px solid", borderImage: "linear-gradient(#f7d516, #ec3a1b) 20"}}>Mission Vision & Goals</h5>
+                        <p className="card-text mt-4 p-4">I am Ashik. I have completed my graduation from <span className='text-warning'>United International University</span> at Computer Science & Engineering Department. After completing my graduation I want to do something different like new be Entrepreneur. But It was very challenging and I have not enough time. After all I am cse graduate so that I am thinking new thinks like new technologies which would changes peoples life and make easy an fun. At this moment the new year 2022 I have a plan and it is big. I want to be a "Full Stack Web Developer" which is challenging for me. After that I am going to do hard work , after three and half month I am making many of practice website include this. Which all are developing at FrontEnd side. My mission in 2022 I want to be a very good React developer and pick a very good job also where I can learn more. My Final Goal is that I want to be very good learner and technology hunter and also a very good developer.</p>
                     </div>
                     </div>
                 </div>
-                <div className="col">
-                    <div className="card h-100">
-                    <img src={banner2} className="card-img-top h-50" alt="..."/>
-                    <div className="card-body">
-                        <h5 className="card-title text-center fs-3" style={{color:"orange", border: "1px solid", borderImage: "linear-gradient(#f7d516, #ec3a1b) 20"}}>Vision</h5>
-                        <p className="card-text">We believe that buying software should be easy and fun. It should browse you happy and clear-looking, with money in your pocket. We also believe that everyone has the right to see.</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="card h-100">
-                    <img src={banner3} className="card-img-top h-50" alt="..."/>
-                    <div className="card-body">
-                        <h5 className="card-title text-center fs-3" style={{color:"orange", border: "1px solid", borderImage: "linear-gradient(#f7d516, #ec3a1b) 20"}}>Goals</h5>
-                        <p className="card-text">A long-term goal helps us to see the larger picture of an organization. It can be the overall direction to the team, project, and company, These goals can be three years, five years, or much longer too.</p>
-                    </div>
-                    </div>
-                </div>
-                </div>
+            </div>
         </div>
     );
 };
