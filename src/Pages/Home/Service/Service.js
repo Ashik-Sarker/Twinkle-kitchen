@@ -11,7 +11,7 @@ const Service = ({ service }) => {
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
                 <p className="card-text">{descriptions}</p>
-                <h3>{price}</h3>
+                <h3>Price: {price}</h3>
                 </div>
                 <Link to={`/services/${id}`}>
                     <button className='w-100 border-0 bg-dark text-light py-3 '>Get The food</button>
