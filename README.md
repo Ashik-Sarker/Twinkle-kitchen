@@ -1,4 +1,4 @@
-# project Name: Twinkle Kitchen
+# Project Name: Twinkle Kitchen
 [Go live: https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app).
 
 ### Features
