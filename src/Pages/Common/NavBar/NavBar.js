@@ -16,7 +16,7 @@ const NavBar = () => {
     return (
         <Navbar sticky='top' className='py-2' collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-            <Navbar.Brand as={Link} to='/'>Twinkle Kitchen</Navbar.Brand>
+            <Navbar.Brand as={Link} to='/'>Twinkle Kitchen pro</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
